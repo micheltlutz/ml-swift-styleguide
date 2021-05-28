@@ -21,11 +21,9 @@ Following this style guide should:
   * For rules that don't directly change the format of the code, we should have a lint rule that throws a warning.
   * Exceptions to these rules should be rare and heavily justified.
 
-
 ## Regarding Frameworks
 
 Please do not import frameworks "just because". Try to do things natively, only importing frameworks. Remember that this is not a regular app. We need to be lightweight.
-
 
 ## Copyright Statement
 
@@ -34,7 +32,6 @@ We do not use **Copyright Statement** in our codes, we value a cleaner file. The
 ## Naming
 
 Using descriptive names makes code easier to read and understand. Use the Swift naming conventions described in the [API Design Guidelines](https://swift.org/documentation/api-design-guidelines/). Also refer to the Clean Code's chapter on naming for more examples. Remember what was said at the Comment's section and be aware that property/parameter/method names should be enough documentation. Make sure that their purpose can be fully understood purely by reading its name.
-
 
 ## Entity Naming
 
@@ -290,9 +287,7 @@ extension TitleAndDescriptionInfoView: ViewConfiguration {
 }
 ```
 
-
 -----
-
 
 The constraints of each subview should be added inside the setup of that subview. It’s important to always remember to add the subview to it’s superview before adding any constraints and pay attention to the order on which the setup methods are called.
 
@@ -306,7 +301,6 @@ private func setup() {
 ```
 
 Actions of buttons and other views are configured in the setup method of that view.
-
 
 ## Assets & Strings
 
@@ -823,5 +817,6 @@ Unused (dead) code should be removed. Don't worry about losing stuff, that's wha
 
 
 ## Final
+
 All classes or members of a class that are not meant to be overriden should be marked as final.
 
