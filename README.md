@@ -17,7 +17,7 @@ Following this style guide should:
 * This guide is in addition to the official [Swift API Design Guidelines](https://swift.org/documentation/api-design-guidelines/). These rules should not contradict that document.
 * These rules should not fight Xcode's <kbd>^</kbd> + <kbd>I</kbd> indentation behavior.
 * We strive to make every rule lintable:
-  * If a rule changes the format of the code, it needs to be able to be reformatted automatically (either using [SwiftLint](https://github.com/realm/SwiftLint) autocorrect or [SwiftFormat](https://github.com/nicklockwood/SwiftFormat)).
+  * If a rule changes the format of the code, it needs to be able to be reformatted automatically (either using [SwiftLint](https://github.com/micheltlutz/realm/SwiftLint) autocorrect or [SwiftFormat](https://github.com/micheltlutz/nicklockwood/SwiftFormat)).
   * For rules that don't directly change the format of the code, we should have a lint rule that throws a warning.
   * Exceptions to these rules should be rare and heavily justified.
 
@@ -98,23 +98,23 @@ case .hunger(let hungerLevel):
 
 We are very fond of good writing and good code reading, we use the English language to document and name variables, methods and classes of our products. To help we keep an active spelling and grammar setting in xcode, which can be seen in the image below.
 
-![Spelling](https://github.com/ml-swift-styleguide/style-guides/blob/master/Images/spellingXcodeConfig.png)
+![Spelling](https://github.com/micheltlutz/ml-swift-styleguide/blob/main/Images/spellingXcodeConfig.png)
 
 ## Line break
 
 Set the column value in your Xcode like the image below.
 
-![Xcode](https://github.com/ml-swift-styleguide/style-guides/blob/master/Images/textEditing.png)
+![Xcode](https://github.com/micheltlutz/ml-swift-styleguide/blob/main/Images/textEditing.png)
 
 With that you can follow the column, therefore breaking the line if you pass it.
 
 Not preferred:
 
-![Not preferred](https://github.com/ml-swift-styleguide/style-guides/blob/master/Images/not%20preferred.png)
+![Not preferred](https://github.com/micheltlutz/ml-swift-styleguide/blob/main/Images/not%20preferred.png)
 
 Preferred:
 
-![Preferred](https://github.com/ml-swift-styleguide/style-guides/blob/master/Images/preferred.png)
+![Preferred](https://github.com/micheltlutz/ml-swift-styleguide/blob/main/Images/preferred.png)
 
 ### Functions / Initializers
 
